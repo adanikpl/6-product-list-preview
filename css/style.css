@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+}
+
+#container {
+	background-color: #98fb98;
+	height: 100vh;
+	position: relative;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.product {
+	display: inline-block;
+    line-height: 100vh;
+    width: 208px;
+	margin: 5px 5px;
+}
+.product1 {
+	background: url('../img/product-1.jpg') no-repeat center center;
+}
+.product2 {
+	background: url('../img/product-2.jpg') no-repeat center center;
+}
+.product3 {
+	background: url('../img/product-3.jpg') no-repeat center center;
+}
+.product4 {
+	background: url('../img/product-4.jpg') no-repeat center center;
+}
+.product1, .product2, .product3, .product4 {
+    height: 200px;
+	background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(252, 139, 49, 0.5);
+    opacity: 0;
+    transition: all 0.4s;
+	position: relative;
+}
+
+.overlay .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: white;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+@media all and (max-width: 992px) {
+    .product {
+         width: 45%;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+    .product {
+         width: 100%;
+    }
+
+}
